@@ -1,0 +1,21 @@
+<h1>FuguCTX</h1>
+
+<p>FuguCTX is a configuration repair model for OpenBSD daemons.
+FuguCTX reads a broken daemon configuration and a parser error, and
+it proposes the smallest fix as a unified diff. The operator reads
+the diff and decides. The engine is a Qwen3-1.7B fine-tune under
+llama.cpp, on the CPU only. The <code>ctx</code> tool writes a diff
+to standard output, and it must not change a system.</p>
+
+<p>The project is also the pilot of
+<a href="https://ttx.fugubsd.org/">FuguTTX</a>. The build rehearses
+the FuguTTX production pipeline at small scale, on the same
+components, at real prices. OpenBSD supplies a deterministic judge
+for every configuration: the parser of the daemon.</p>
+
+<h2>Documentation</h2>
+
+<ul>
+<li>The <a href="https://github.com/FuguBSD/FuguCTX">source repository</a>
+and the <a href="https://github.com/FuguBSD/FuguCTX/blob/main/spec/index.md">specification</a></li>
+</ul>
