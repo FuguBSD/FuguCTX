@@ -93,12 +93,12 @@ the reference, and the daemon starts and answers. Details:
 
 <a id="c11"></a>
 
-## C11 — Infrastructure: the FuguTTX infrastructure spec, applied
+## C11 — Infrastructure: the shared infrastructure instructions, applied
 
 Same stacks, same layout, same state rules, same credential split, and the same
-watchdog. The tag prefix is `ctx:`. The project gets its own Scaleway Project in
-the same Organization. The budget is EUR 300 per month. Details:
-[infrastructure](infrastructure.md).
+watchdog, from the `infra` pack of FuguBSD/Tooling. The tag prefix is `ctx:`.
+The project gets its own Scaleway Project in the same Organization. The budget
+is EUR 300 per month. Details: [infrastructure](infrastructure.md).
 
 <a id="c12"></a>
 

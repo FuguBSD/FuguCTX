@@ -1,28 +1,22 @@
 # Infrastructure
 
-The pilot applies the FuguTTX infrastructure with three substitutions. This
-document names the substitutions, the dev host test, and the image stack.
+The pilot applies the shared infrastructure instructions with three
+substitutions. This document names the substitutions, the dev host test, and the
+image stack.
 
 <a id="iac-apply"></a>
 
-## The applied FuguTTX infrastructure
+## The applied instructions
 
-Three substitutions adapt the FuguTTX infrastructure to this pilot
-([C11](DECISIONS.md#c11)). Everything else transfers verbatim:
+The synced [infra/CLAUDE.md](../infra/CLAUDE.md) holds the shared rules: naming,
+layout, tags, state, credentials, spend guardrails, and teardown. Three
+substitutions adapt them to this pilot ([C11](DECISIONS.md#c11)). Rehearses: the
+FuguTTX IAC family.
 
-- the four stacks: `persistent`, `dev`, `train`, and `image`
-- the state backend, with its native lock
-- the three-application credential split
-- the train key over SSH, and never through state
-- the watchdog, with heartbeat and claim
-- the forecast check before each apply
-- the teardown order
-
-Rehearses: the FuguTTX IAC family.
-
-- **IAC-APPLY-1** — The FuguTTX infrastructure document must apply as written,
-  with only the three substitutions of this unit.
-- **IAC-APPLY-2** — The tag prefix must be `ctx:`.
+- **IAC-APPLY-1** — The synced instructions must apply as written, with only the
+  three substitutions of this unit.
+- **IAC-APPLY-2** — The project code must be `ctx`, and the tag prefix must be
+  `ctx:`.
 - **IAC-APPLY-3** — The Scaleway Project must be FuguCTX's own, in the same
   Organization.
 - **IAC-APPLY-4** — The budget must be EUR 300 per month, with alerts at 50, 75,
@@ -52,7 +46,7 @@ IAC-METAL, FuguTTX IAC-DEV, FuguTTX D9.
 ## The image stack
 
 One stack builds the OpenBSD guest image. The stack is one of the four stacks of
-[the applied infrastructure](#iac-apply).
+[the applied instructions](#iac-apply).
 
 - **IAC-IMAGE-1** — The stack must build the OpenBSD guest qcow2 with `fuguvm`
   and `autoinstall(8)`, exactly as FuguTTX IAC-IMAGE specifies.
