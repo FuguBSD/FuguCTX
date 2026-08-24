@@ -22,7 +22,8 @@ The register is the deliverable of G2 ([C12](DECISIONS.md#c12)).
 ## The planned rehearsals
 
 Each row of the table is a planned rehearsal, with one row per pilot component.
-Each campaign appends its findings to the register.
+Each campaign appends its findings to the register. "The shared instructions"
+names the synced [infra/CLAUDE.md](../infra/CLAUDE.md).
 
 | Pilot component                               | FuguTTX units rehearsed                                   |
 | --------------------------------------------- | --------------------------------------------------------- |
@@ -39,12 +40,12 @@ Each campaign appends its findings to the register.
 | Axolotl in Docker on the GPU OS image         | FuguTTX TRN-EXEC, FuguTTX D3                              |
 | SFT pass end to end                           | FuguTTX TRN-SFT, FuguTTX D4                               |
 | H100 quota request and grant time             | FuguTTX IAC-TRAIN, FuguTTX IAC-PREREQ                     |
-| Live price read before apply                  | FuguTTX IAC-PREREQ, FuguTTX IAC-SPEND                     |
-| State backend, native lock, encryption        | FuguTTX IAC-STATE                                         |
-| Three-application credential split            | FuguTTX IAC-CRED, FuguTTX D9                              |
-| Train key over SSH, expiry backstop           | FuguTTX IAC-TRAINCRED                                     |
-| Watchdog, heartbeat, claim protocol           | FuguTTX IAC-SPEND                                         |
-| Train stack up/down, teardown completeness    | FuguTTX IAC-TRAIN, FuguTTX IAC-TEARDOWN                   |
+| Live price read before apply                  | FuguTTX IAC-PREREQ, the shared instructions               |
+| State backend, native lock, encryption        | The shared instructions                                   |
+| Three-application credential split            | The shared instructions, FuguTTX D9                       |
+| Train key over SSH, expiry backstop           | The shared instructions                                   |
+| Watchdog, heartbeat, claim protocol           | The shared instructions                                   |
+| Train stack up/down, teardown completeness    | FuguTTX IAC-TRAIN, the shared instructions                |
 | Guest image build with fuguvm and autoinstall | FuguTTX IAC-IMAGE                                         |
 | llama.cpp on OpenBSD, CPU only, determinism   | FuguTTX D2, and the FuguTTX inference specification       |
 

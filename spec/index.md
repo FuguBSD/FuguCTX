@@ -73,7 +73,7 @@ IDs of its units.
 | COR  | [corpus.md](corpus.md)                 | Data sources, license lanes, and the corpus buckets              |
 | TRN  | [training.md](training.md)             | The mutation pipeline, the rollout rules, and the compute budget |
 | EVL  | [evaluation.md](evaluation.md)         | The three gates, the harm rate, and the artifact suite           |
-| IAC  | [infrastructure.md](infrastructure.md) | The applied FuguTTX infrastructure, the dev host, and the image  |
+| IAC  | [infrastructure.md](infrastructure.md) | The applied shared infrastructure, the dev host, and the image   |
 | REG  | [register.md](register.md)             | The learning register and the scope of its claims                |
 | LIC  | [licensing.md](licensing.md)           | Licenses, attribution, and release integrity                     |
 | RSK  | [risks.md](risks.md)                   | Risks and their mitigations                                      |
