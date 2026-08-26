@@ -56,8 +56,7 @@ fabricated observation teaches the model to expect a system that does not exist.
 - **TRN-ROLL-3** — The prompt text, [the edit schema](engine.md#eng-schema), and
   the error templates are shared artifacts. The repository defines each one
   once. The driver and [the harness](engine.md#eng-split) must read them from
-  the same source. Thus the training format and the run-time format cannot
-  drift.
+  the same source. So the training format and the run-time format cannot drift.
 - **TRN-ROLL-4** — The corpus must hold recovery examples. A recovery example
   holds a bad proposal, the refusal of [ENG-ANCHOR](engine.md#eng-anchor), and
   the corrected proposal.
