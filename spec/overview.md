@@ -30,7 +30,7 @@ choice.
 ## Deliverables
 
 The deliverables are the model, the `ctx` engine, the rollout driver, and
-[the learning register](register.md).
+[the learning](LEARNING.md).
 
 ## Accepted costs
 
@@ -46,7 +46,7 @@ The design buys pilot value with real costs. The table names each one.
 
 The last row is a design cost, and it is also a lesson. The rollout rate bounds
 the teacher cost. FuguTTX carries the same coupling in its trace campaign, so
-the register must measure it here first.
+LEARNING must measure it here first.
 
 ## The name
 

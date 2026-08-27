@@ -6,8 +6,8 @@ document. The [conventions](index.md#conventions) define the unit IDs. Each row
 describes the current state only. A row must not carry a plan name or a
 reference to an earlier state. A note can carry the date of a recorded fact.
 
-The learning register of [register.md](register.md) is a different document. It
-records what each campaign teaches about the FuguTTX specification.
+The learning of [LEARNING.md](LEARNING.md) is a different document. It records
+what each campaign teaches about the FuguTTX specification.
 
 ## States
 
@@ -50,9 +50,9 @@ phase applies.
 | [IAC-APPLY](infrastructure.md#iac-apply)     | open  | —       | —                                      |
 | [IAC-DEVHOST](infrastructure.md#iac-devhost) | open  | —       | —                                      |
 | [IAC-IMAGE](infrastructure.md#iac-image)     | open  | —       | —                                      |
-| [REG-DELIVER](register.md#reg-deliver)       | open  | —       | —                                      |
-| [REG-MAP](register.md#reg-map)               | n-a   | —       | Citation only. The planned rehearsals. |
-| [REG-SCOPE](register.md#reg-scope)           | n-a   | —       | Citation only. A constraint on claims. |
+| [LRN-DELIVER](LEARNING.md#lrn-deliver)       | open  | —       | —                                      |
+| [LRN-MAP](LEARNING.md#lrn-map)               | n-a   | —       | Citation only. The planned rehearsals. |
+| [LRN-SCOPE](LEARNING.md#lrn-scope)           | n-a   | —       | Citation only. A constraint on claims. |
 | [LIC-LIC](licensing.md#lic-lic)              | open  | —       | —                                      |
 | [LIC-RELEASE](licensing.md#lic-release)      | open  | —       | —                                      |
 | [RSK-GATE](risks.md#rsk-gate)                | n-a   | —       | Citation only.                         |
@@ -81,11 +81,16 @@ exists, so every value is "—". Set the roots when the layout lands.
 | training.md       | —     |
 | evaluation.md     | —     |
 | infrastructure.md | —     |
-| register.md       | —     |
+| LEARNING.md       | —     |
 | licensing.md      | —     |
 | risks.md          | —     |
 
 ## Retired IDs
 
-| ID  |
-| --- |
+An ID here is spent. No unit and no rule can take it again.
+
+| ID          |
+| ----------- |
+| REG-DELIVER |
+| REG-MAP     |
+| REG-SCOPE   |

@@ -17,8 +17,8 @@ H100 quota by default. The quota request is a rehearsal.
 
 - **TRN-INST-1** — The pipeline must read the live price before it creates a
   resource.
-- **TRN-INST-2** — The [register](register.md#reg-deliver) must record the
-  response time of the quota request.
+- **TRN-INST-2** — [LEARNING](LEARNING.md#lrn-deliver) must record the response
+  time of the quota request.
 
 <a id="trn-mut"></a>
 
@@ -119,5 +119,4 @@ raises it. The FuguTTX specification sets one campaign month at EUR 300–800.
 The rollout campaign is the line to watch. The teacher bills while the guests
 work, so a slow guest raises the GPU bill.
 
-- **TRN-BUDGET-1** — The register must report the achieved rollouts per
-  GPU-hour.
+- **TRN-BUDGET-1** — LEARNING must report the achieved rollouts per GPU-hour.

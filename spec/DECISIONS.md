@@ -35,8 +35,8 @@ at low stakes. The L40S stays as the budget escape. Details:
 
 The pilot runs no CPT pass. The base model already reads configuration syntax.
 The corpus holds repair pairs, and each pair carries a verdict from a real
-parser. This keeps the pilot short, and the register records the choice.
-Details: [training](training.md).
+parser. This keeps the pilot short, and LEARNING records the choice. Details:
+[training](training.md).
 
 <a id="c5"></a>
 
@@ -102,8 +102,8 @@ is EUR 300 per month. Details: [infrastructure](infrastructure.md).
 
 <a id="c12"></a>
 
-## C12 — The learning register is a deliverable
+## C12 — The learning is a deliverable
 
-Every campaign ends with a register entry that maps its outcome to FuguTTX spec
+Every campaign ends with a LEARNING entry that maps its outcome to FuguTTX spec
 units. A learning that contradicts the FuguTTX spec must become a FuguTTX spec
-change, not a note. Details: [register](register.md).
+change, not a note. Details: [learning](LEARNING.md).
