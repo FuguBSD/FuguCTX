@@ -19,8 +19,8 @@ carries the risk.
 
 A mechanical break teaches a mechanical repair.
 [The teacher set](training.md#trn-mut) and [the eval lane](corpus.md#cor-eval)
-test that gap. [The register](register.md#reg-deliver) reports the score
-difference between the two sets.
+test that gap. [LEARNING](LEARNING.md#lrn-deliver) reports the score difference
+between the two sets.
 
 <a id="rsk-cap"></a>
 
@@ -42,7 +42,7 @@ run guests in parallel. A measurement on
 ## Scope leak
 
 G2 pulls the project toward FuguTTX features. The test: FuguCTX builds nothing
-that neither G1 nor a [register row](register.md#reg-map) can name.
+that neither G1 nor a [LEARNING row](LEARNING.md#lrn-map) can name.
 
 <a id="rsk-seq"></a>
 

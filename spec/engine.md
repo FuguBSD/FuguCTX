@@ -88,7 +88,7 @@ gate.
 - **ENG-CHECKERS-1** — The repository must hold one table that maps a
   configuration to its check command.
 - **ENG-CHECKERS-2** — A guest must verify each command on the target release,
-  and the [learning register](register.md#reg-deliver) must record the result.
+  and [LEARNING](LEARNING.md#lrn-deliver) must record the result.
 
 <a id="eng-iface"></a>
 

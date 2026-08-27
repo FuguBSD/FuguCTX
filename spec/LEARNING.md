@@ -1,29 +1,32 @@
-# The learning register
+# Learning
 
-The learning register records what each campaign teaches about the FuguTTX
-specification. This document defines the register as a deliverable, the planned
-rehearsals, and the scope of a claim.
+This document holds the learning of the pilot. It records what each campaign
+teaches about the FuguTTX specification. An entry is a dated record of one
+campaign, and it is not a design statement. This document defines the learning
+as a deliverable, the planned rehearsals, and the scope of a claim. The
+[implementation register](STATUS.md) is a different document, and it records
+implementation state.
 
-<a id="reg-deliver"></a>
+<a id="lrn-deliver"></a>
 
-## The register is a deliverable
+## The learning is a deliverable
 
-The register is the deliverable of G2 ([C12](DECISIONS.md#c12)).
+The learning is the deliverable of G2 ([C12](DECISIONS.md#c12)).
 
-- **REG-DELIVER-1** — Every campaign must end with a register entry. The entry
+- **LRN-DELIVER-1** — Every campaign must end with a LEARNING entry. The entry
   maps the outcome of the campaign to FuguTTX specification units.
-- **REG-DELIVER-2** — A finding must land in the FuguTTX `docs/research/`
+- **LRN-DELIVER-2** — A finding must land in the FuguTTX `docs/research/`
   directory.
-- **REG-DELIVER-3** — A finding that contradicts the FuguTTX specification must
+- **LRN-DELIVER-3** — A finding that contradicts the FuguTTX specification must
   become a FuguTTX specification change, not a note.
 
-<a id="reg-map"></a>
+<a id="lrn-map"></a>
 
 ## The planned rehearsals
 
 Each row of the table is a planned rehearsal, with one row per pilot component.
-Each campaign appends its findings to the register. "The shared instructions"
-names the synced [infra/CLAUDE.md](../infra/CLAUDE.md).
+Each campaign appends its findings as an entry. "The shared instructions" names
+the synced [infra/CLAUDE.md](../infra/CLAUDE.md).
 
 | Pilot component                               | FuguTTX units rehearsed                                   |
 | --------------------------------------------- | --------------------------------------------------------- |
@@ -49,11 +52,11 @@ names the synced [infra/CLAUDE.md](../infra/CLAUDE.md).
 | Guest image build with fuguvm and autoinstall | FuguTTX IAC-IMAGE                                         |
 | llama.cpp on OpenBSD, CPU only, determinism   | FuguTTX D2, and the FuguTTX inference specification       |
 
-<a id="reg-scope"></a>
+<a id="lrn-scope"></a>
 
 ## The scope of a claim
 
-The register must scope every claim, because these FuguTTX risks stay open after
+Each entry must scope every claim, because these FuguTTX risks stay open after
 the pilot:
 
 - Training dynamics at 4B: multi-hour epochs, checkpoint sizes that stress the
@@ -66,5 +69,5 @@ the pilot:
 - Knowledge-dense continued pretraining. [C4](DECISIONS.md#c4) drops the CPT
   pass.
 
-A 1.7B result does not predict a 4B result. The register must say what a finding
+A 1.7B result does not predict a 4B result. Each entry must say what a finding
 is evidence for, and what it is not.
