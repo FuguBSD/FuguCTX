@@ -1,11 +1,13 @@
 # Learning
 
-This document holds the learning of the pilot. It records what each campaign
-teaches about the FuguTTX specification. An entry is a dated record of one
-campaign, and it is not a design statement. This document defines the learning
-as a deliverable, the planned rehearsals, and the scope of a claim. The
-[implementation register](STATUS.md) is a different document, and it records
-implementation state.
+This document is the delivered ledger of the pilot. It receives one batch for
+each campaign, and each batch cites the library pages that hold its evidence.
+The working record is the library, the shared repository FuguBSD/Wiki, and it
+holds every observation and every admitted claim.
+
+This document defines the learning as a deliverable, the planned rehearsals, and
+the scope of a claim. The [implementation register](STATUS.md) is a different
+document, and it records implementation state.
 
 <a id="lrn-deliver"></a>
 
@@ -13,20 +15,32 @@ implementation state.
 
 The learning is the deliverable of G2 ([C12](DECISIONS.md#c12)).
 
-- **LRN-DELIVER-1** — Every campaign must end with a LEARNING entry. The entry
-  maps the outcome of the campaign to FuguTTX specification units.
+- **LRN-DELIVER-1** — Every campaign must end with one batch in this ledger. The
+  batch maps the outcome of the campaign to FuguTTX specification units.
 - **LRN-DELIVER-2** — A finding must land in the FuguTTX `docs/research/`
   directory.
 - **LRN-DELIVER-3** — A finding that contradicts the FuguTTX specification must
   become a FuguTTX specification change, not a note.
+- **LRN-DELIVER-6** — An observation must reach the library at capture time. The
+  library is the working record, and a batch here is the delivered record.
+- **LRN-DELIVER-7** — A batch must hold one section for each campaign, and each
+  section must cite the library pages that hold its evidence. A batch must hold
+  no per-entry prose: the library holds it.
+- **LRN-DELIVER-8** — A claim that names a number, a cause, or a platform
+  behavior must meet a verifier before it enters the library. Any other claim
+  enters with no check.
 
 <a id="lrn-map"></a>
 
 ## The planned rehearsals
 
 Each row of the table is a planned rehearsal, with one row per pilot component.
-Each campaign appends its findings as an entry. "The shared instructions" names
-the synced [infra/CLAUDE.md](../infra/CLAUDE.md).
+A campaign writes its claims to the library page of the row, and this ledger
+receives the batch. No campaign has run, so no library page exists yet. "The
+shared instructions" names the synced [infra/CLAUDE.md](../infra/CLAUDE.md).
+
+The library page of a component is `Library-FuguCTX-<component>`, and the
+workspace specification states the page naming.
 
 | Pilot component                               | FuguTTX units rehearsed                                   |
 | --------------------------------------------- | --------------------------------------------------------- |
