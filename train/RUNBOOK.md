@@ -47,12 +47,3 @@ reaches a stage below must stop, and report the stage as absent.
   carries a verdict from a real parser.
 - **The threshold policy.** `spec/evaluation.md`. A baseline fixes the
   thresholds.
-
-## The rules that the observer set adds
-
-- Export this project's `.env` before any command that reaches Scaleway. The
-  `env` block of the workspace checkout shadows every project key (Workspace
-  D-05).
-- State the clone and the git HEAD that each step read.
-- A campaign observation goes to the learning library at capture time. The
-  ledger in `spec/LEARNING.md` receives one batch for each campaign.
