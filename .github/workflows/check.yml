@@ -22,11 +22,17 @@ jobs:
       - name: Setup bun
         uses: FuguBSD/Tooling/actions/setup-bun@main
 
-      # The gitleaks gate scans the full git history, so the
-      # checkout above stays at fetch-depth 0 (WFL-GITLEAKS-2).
-      - name: Setup gitleaks
-        uses: FuguBSD/Tooling/actions/setup-gitleaks@main
+      # make deps installs the tool environment before the runtime
+      # one, so the secret gate has its binary. One pin serves the
+      # operator gate and the CI gate.
+      - name: Install dependencies
+        run: |
+          make deps
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
+      # make check runs the gitleaks gate, and the gate scans the
+      # full git history, so the checkout above stays at fetch-depth
+      # 0 (WFL-GITLEAKS-2). The manifest provides the binary.
       - name: Check
         run: make check
 
