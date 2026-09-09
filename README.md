@@ -1,43 +1,23 @@
 # FuguCTX
 
 A configuration repair model for OpenBSD daemons, built as the pilot of FuguTTX.
-
 FuguCTX reads a broken daemon configuration and a parser error, and it proposes
 the smallest fix as a unified diff. The operator reads the diff and decides.
 
 The engine is a Qwen3-1.7B fine-tune under llama.cpp, on the CPU only. The `ctx`
-tool writes a diff to standard output, and it must not change a system.
-
-The build rehearses the FuguTTX production pipeline at small scale, on the same
-components, at real prices. OpenBSD supplies a deterministic judge for every
-configuration: the parser of the daemon.
-
-## Documentation
-
-The project is specification-first: the specification in [spec/](spec/index.md)
-is the authoritative reference.
+tool writes a diff to standard output, and it must not change a system. The
+build rehearses the FuguTTX production pipeline at small scale.
 
 ## Commands
 
 ```sh
+make setup       # install the development tools into .venv
 make deps        # install gitleaks and the Scaleway CLI
-make check       # spec-check + ste-lint + gitleaks + test; run it before each commit
+make check       # run every gate; run it before each commit
+make test        # run the test suite
+make format-fix  # fix the Python, Markdown, JSON and YAML formatting
 ```
-
-`make deps` installs the `tool` environment before the `runtime` environment, so
-the gitleaks binary of the secret gate is present for each chain.
-`deps/SHA256.txt` records the sha256 digest of each versioned download, and
-`make deps` compares the downloaded bytes against it. The CI gate installs
-gitleaks with `make deps`, so one pin serves the operator gate and the CI gate.
-
-`make check` runs the Markdown format gate, and prettier runs through bunx. The
-operator installs bun, for example from Homebrew. The manifest does not provide
-it, because the format gate needs `bunx` before a target can run.
 
 ## Commit scopes
 
 `spec`, `docs`, `engine`, `corpus`, `train`, `eval`, `infra`, `ci`.
-
-## License
-
-ISC. See [LICENSE](LICENSE).
