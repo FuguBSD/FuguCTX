@@ -1,12 +1,13 @@
 # FuguCTX
 
-A configuration repair model for OpenBSD daemons, built as the pilot of FuguTTX.
-FuguCTX reads a broken daemon configuration and a parser error, and it proposes
-the smallest fix as a unified diff. The operator reads the diff and decides.
+A configuration repair model for OpenBSD daemons. FuguCTX reads a broken daemon
+configuration and a parser error, and it proposes the smallest fix as a unified
+diff. The operator reads the diff and decides.
 
 The engine is a Qwen3-1.7B fine-tune under llama.cpp, on the CPU only. The `ctx`
 tool writes a diff to standard output, and it must not change a system. The
-build rehearses the FuguTTX production pipeline at small scale.
+project is the pilot of [FuguTTX](https://github.com/FuguBSD/FuguTTX), and the
+build rehearses its production pipeline at small scale.
 
 ## Commands
 
